@@ -36,5 +36,5 @@ F1 Score: 0.83
 - Optimize model performance with hyperparameter tuning.
 
 ## Author
-Developed by [Your Name]
+Developed by [Fatemeh Ramazanian]
 
