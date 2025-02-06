@@ -1,40 +1,40 @@
 # IMDB Sentiment Analysis
 
-This project performs sentiment analysis on IMDB movie reviews using Natural Language Processing (NLP) techniques. The dataset is processed, vectorized using TF-IDF, and classified using the **Naive Bayes classifier**.
-
+This repository contains various models to perform sentiment analysis on the IMDB movie reviews dataset.he goal is to classify movie reviews as positive or negative using different machine learning and deep learning techniques.
 ## Dataset
-The dataset is extracted from the **IMDB Large Movie Review Dataset** ([source](https://ai.stanford.edu/~amaas/data/sentiment/)). It consists of positive and negative movie reviews.
 
-## Installation & Dependencies
-To run the project, install the required Python packages:
+The IMDB dataset consists of 50,000 movie reviews labeled as positive or negative.t is commonly used for binary sentiment classification tasks.
+
+## Models Implemented
+
+1. **Naive Bayes Model (`sentiment_analysis_nb.py`)**:
+   - Utilizes a Multinomial Naive Bayes classifier with TF-IDF vectorization.
+2. **Logistic Regression Model (`LogisticRegression.py`)**:
+   - Employs Logistic Regression with TF-IDF vectorization for sentiment classification.
+3. **TensorFlow Model (`TensorFlow.py`)**:
+   - Implements a deep learning model using TensorFlow and Keras, featuring an embedding layer followed by Bidirectional LSTM layers.
+## Requirements
+
+o install the necessary dependencies, run:
 ```bash
-pip install pandas numpy scikit-learn requests
+pip install -r requirements.txt
 ```
 
-## Project Structure
-- `sentiment_analysis.py`: Main script for downloading, processing, and training the model.
-- `README.md`: Documentation for the project.
+## Usage
 
-## Steps in the Analysis
-1. **Download & Load Data**: Fetch the dataset from Stanford’s IMDB sentiment analysis dataset.
-2. **Preprocessing**: Convert star ratings into binary sentiment labels (Positive/Negative).
-3. **Train-Test Split**: 60% training, 20% validation, 20% testing.
-4. **Vectorization**: Convert text into numerical features using TF-IDF.
-5. **Train Model**: Use **Multinomial Naive Bayes** for classification.
-6. **Evaluate Model**: Measure **accuracy, precision, recall, and F1-score**.
+1. **Naive Bayes Model**:
+   - Execute `sentiment_analysis_nb.py` to train and evaluate the Naive Bayes model.
+2. **Logistic Regression Model**:
+   - Run `LogisticRegression.py` to train and assess the Logistic Regression model.
+3. **TensorFlow Model**:
+   - Use `TensorFlow.py` to train and evaluate the deep learning model.
+Each script is self-contained and can be run independently.nsure that the IMDB dataset is properly loaded and preprocessed as required by each model.
+## Results
 
-## Model Performance
-```
-Accuracy: 0.83
-Precision: 0.86
-Recall: 0.80
-F1 Score: 0.83
-```
+The performance of each model is evaluated using metrics such as accuracy, precision, recall, and F1 score.etailed results can be found within the respective scripts.
+## License
 
-## Next Steps
-- Implement **Logistic Regression** for comparison.
-- Optimize model performance with hyperparameter tuning.
+This project is licensed under the MIT License.
+## Acknowledgments
 
-## Author
-Developed by Fatemeh Ramazanian
-
+The IMDB dataset is provided by Stanford and is available [here](https://ai.stanford.edu/~amaas/data/sentiment/).```
