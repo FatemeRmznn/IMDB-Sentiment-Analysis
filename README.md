@@ -37,4 +37,4 @@ The performance of each model is evaluated using metrics such as accuracy, preci
 This project is licensed under the MIT License.
 ## Acknowledgments
 
-The IMDB dataset is provided by Stanford and is available [here](https://ai.stanford.edu/~amaas/data/sentiment/).```
+The IMDB dataset is provided by Stanford and is available [here](https://ai.stanford.edu/~amaas/data/sentiment/).
